@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { MdAdd } from 'react-icons/md';
+import { MdAdd } from 'react-icons/md';//아이콘 호출
 import './TodoInsert.scss';
 
 const TodoInsert=({onInsert})=>{
@@ -21,7 +21,7 @@ const TodoInsert=({onInsert})=>{
     [onInsert, value],
   );
   return (
-    <form className="TodoInsert" onSubmit={onSubmit}>
+    <form className="TodoInsert" onSubmit={onSubmit} >
       <input 
       placeholder="할 일을 입력하세요"
       value={value}
